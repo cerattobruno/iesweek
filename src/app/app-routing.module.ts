@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'galeria', component: GaleriaComponent},
   {path: 'contacto', component: ContactoComponent},
   {path: 'redes', component: RedesComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'acercade'},
+  //{path: '**', pathMatch: 'full', redirectTo: 'acercade'},
 ];
 
 @NgModule({
