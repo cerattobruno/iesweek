@@ -1,5 +1,5 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger">
-    <a class="navbar-brand" [routerLink]="['/']" fragment="">IES Week</a>
+    <a class="navbar-brand" [routerLink]="['/']" >IES Week</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,22 +7,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment="acercade" [routerLinkActive]="['active']">Acerca de </a>
+                <a class="nav-link" [routerLink]="['/']" fragment='acercade' [ngClass]="{'active' : this.fragment=='acercade'}" >Acerca de </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment="cronograma" [routerLinkActive]="['active']">Cronograma</a>
+                <a class="nav-link" [routerLink]="['/']" fragment='cronograma' [ngClass]="{'active' : this.fragment=='cronograma'}">Cronograma</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment="disertantes" [routerLinkActive]="['active']">Disertantes </a>
+                <a class="nav-link" [routerLink]="['/']" fragment='disertantes' [ngClass]="{'active' : this.fragment=='disertantes'}">Disertantes </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment="galeria" [routerLinkActive]="['active']">Galeria </a>
+                <a class="nav-link" [routerLink]="['/']" fragment='galeria' [ngClass]="{'active' : this.fragment=='galeria'}">Galeria </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment="contacto" [routerLinkActive]="['active']">Contacto</a>
+                <a class="nav-link" [routerLink]="['/']" fragment='contacto' [ngClass]="{'active' : this.fragment=='contacto'}">Contacto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment="redes" [routerLinkActive]="['active']">Redes Sociales </a>
+                <a class="nav-link" [routerLink]="['/']"  fragment='redes' [ngClass]="{'active' : this.fragment=='redes'}">Redes Sociales </a>
             </li>
         </ul>
     </div>
