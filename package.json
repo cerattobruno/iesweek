@@ -28,6 +28,7 @@
     "mdbootstrap": "^4.8.9",
     "popper.js": "^1.15.0",
     "rxjs": "~6.3.3",
+    "smooth-scroll": "^16.1.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
