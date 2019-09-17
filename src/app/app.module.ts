@@ -11,6 +11,7 @@ import { GaleriaComponent } from './componentes/galeria/galeria.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { RedesComponent } from './componentes/redes/redes.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 // Conexión a Firebase
 import { AngularFireModule } from 'angularfire2';
@@ -33,7 +34,8 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
