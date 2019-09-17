@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireObject, PathReference } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 import { Contacto } from 'src/app/models/contacto.model';
 
@@ -11,32 +11,28 @@ import { Contacto } from 'src/app/models/contacto.model';
 export class ContactoComponent implements OnInit {
   itemRef: AngularFireObject<any>;
   item: Observable<any>;
-
+  itemname: PathReference = 'contacto';
   contactonuevo: Contacto;
 
   constructor(db: AngularFireDatabase) {
-    this.itemRef = db.object('item');
+    var currentUnixTime = new Date().getTime();
+    this.itemname = "contactos/contacto_" + currentUnixTime;
+    this.itemRef = db.object(this.itemname);
     this.item = this.itemRef.valueChanges();
-
     this.contactonuevo = new Contacto('', '', '', '');
   }
-  save(newName: string) {
-    this.itemRef.set({ name: newName });
-  }
-  update(newSize: string) {
-    this.itemRef.update({ size: newSize });
+  save() {
+    this.itemRef.set({ nombre: this.contactonuevo.nombrecompleto, email: this.contactonuevo.email, telefono: this.contactonuevo.telefono, mensaje: this.contactonuevo.mensaje });
   }
   delete() {
     this.itemRef.remove();
   }
 
   ngOnInit() {
-    this.save("hola " + Date());
-    this.update(Date());
   }
 
   onSubmit() {
-    console.log(this.contactonuevo);
+    this.save();
     this.contactonuevo = new Contacto('', '', '', '');
   }
 
