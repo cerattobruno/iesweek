@@ -5,9 +5,9 @@
 <div class="card-columns">
 
     <div *ngFor="let disertante of disertantes" class="card text-white bg-primary ml-2 mr-4 mt-2 mb-2 animated fadeIn">
-        <img class="card-img-top" src="../../..//assets/disertante2.jpg" alt="Card image cap">
+        <img class="card-img-top" src="{{ disertante.url }}" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">{{disertante}}</h5>
+            <h5 class="card-title">{{disertante.nombre}} {{disertante.apellido}} </h5>
             <p class="card-text"> Eventos:</p>
         </div>
         <ul class="list-group list-group-flush">

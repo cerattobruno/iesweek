@@ -16,13 +16,14 @@ export class ContactoComponent implements OnInit {
 
   constructor(db: AngularFireDatabase) {
     var currentUnixTime = new Date().getTime();
-    this.itemname = "contactos/contacto_" + currentUnixTime;
+    this.itemname = 'contactos/contacto_' + currentUnixTime;
     this.itemRef = db.object(this.itemname);
     this.item = this.itemRef.valueChanges();
     this.contactonuevo = new Contacto('', '', '', '');
   }
   save() {
-    this.itemRef.set({ nombre: this.contactonuevo.nombrecompleto, email: this.contactonuevo.email, telefono: this.contactonuevo.telefono, mensaje: this.contactonuevo.mensaje });
+    this.itemRef.set({ nombre: this.contactonuevo.nombrecompleto, email: this.contactonuevo.email,
+      telefono: this.contactonuevo.telefono, mensaje: this.contactonuevo.mensaje });
   }
   delete() {
     this.itemRef.remove();
