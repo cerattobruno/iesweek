@@ -1,30 +1,29 @@
         
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger">        
-    <a class="navbar-brand" [routerLink]="['/']" >IES Week</a>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark ">        
+    <a class="navbar-brand ml-3" [routerLink]="['/']" ><img class="header-logo" src="../../../assets/IESWeek2019.png" alt="IES Week Logo" title="IES Week Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment='acercade' [ngClass]="{'active' : this.fragment=='acercade'}" >Acerca de </a>
+        <ul class="navbar-nav ml-auto rounded-more top-menu">
+            <li class="nav-item top-menu-left" [ngClass]="{'active' : this.fragment=='acercade'}">
+                <a class="nav-link" [routerLink]="['/']" fragment='acercade'>Acerca de </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment='cronograma' [ngClass]="{'active' : this.fragment=='cronograma'}">Cronograma</a>
+            <li class="nav-item" [ngClass]="{'active' : this.fragment=='cronograma'}">
+                <a class="nav-link" [routerLink]="['/']" fragment='cronograma'>Cronograma</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment='disertantes' [ngClass]="{'active' : this.fragment=='disertantes'}">Disertantes </a>
+            <li class="nav-item" [ngClass]="{'active' : this.fragment=='disertantes'}">
+                <a class="nav-link" [routerLink]="['/']" fragment='disertantes'>Disertantes </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment='galeria' [ngClass]="{'active' : this.fragment=='galeria'}">Galeria </a>
+            <li class="nav-item" [ngClass]="{'active' : this.fragment=='galeria'}">
+                <a class="nav-link" [routerLink]="['/']" fragment='galeria'>Galeria </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']" fragment='contacto' [ngClass]="{'active' : this.fragment=='contacto'}">Contacto</a>
+            <li class="nav-item" [ngClass]="{'active' : this.fragment=='contacto'}">
+                <a class="nav-link" [routerLink]="['/']" fragment='contacto'>Contacto</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/']"  fragment='redes' [ngClass]="{'active' : this.fragment=='redes'}">Redes Sociales </a>
+            <li class="nav-item top-menu-right" [ngClass]="{'active' : this.fragment=='redes'}">
+                <a class="nav-link" [routerLink]="['/']"  fragment='redes'>Redes Sociales </a>
             </li>
         </ul>
     </div>

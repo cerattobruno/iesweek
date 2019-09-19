@@ -1,0 +1,4 @@
+.input-missing {
+    border: 1px solid red;
+    background-color: rgba(255,0,0,0.2);
+}
