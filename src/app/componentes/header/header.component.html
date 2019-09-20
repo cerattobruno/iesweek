@@ -7,22 +7,22 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto rounded-more top-menu">
-            <li class="nav-item top-menu-left" [ngClass]="{'active' : this.fragment=='acercade'}">
+            <li class="nav-item top-menu-left" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='acercade'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='acercade'>Acerca de </a>
             </li>
-            <li class="nav-item" [ngClass]="{'active' : this.fragment=='cronograma'}">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='cronograma'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='cronograma'>Cronograma</a>
             </li>
-            <li class="nav-item" [ngClass]="{'active' : this.fragment=='disertantes'}">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='disertantes'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='disertantes'>Disertantes </a>
             </li>
-            <li class="nav-item" [ngClass]="{'active' : this.fragment=='galeria'}">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='galeria'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='galeria'>Galeria </a>
             </li>
-            <li class="nav-item" [ngClass]="{'active' : this.fragment=='contacto'}">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='contacto'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='contacto'>Contacto</a>
             </li>
-            <li class="nav-item top-menu-right" [ngClass]="{'active' : this.fragment=='redes'}">
+            <li class="nav-item top-menu-right" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='redes'}">
                 <a class="nav-link" [routerLink]="['/']"  fragment='redes'>Redes Sociales </a>
             </li>
         </ul>

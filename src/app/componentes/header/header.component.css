@@ -44,3 +44,25 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+button:focus { 
+    outline: 0;
+}
+
+@media (max-width: 992px) {
+    .top-menu-left {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+    .top-menu-right {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    .top-menu {
+        box-shadow: none;
+        border: 1px solid #ba122b;
+    }
+}
