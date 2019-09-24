@@ -1,36 +1,104 @@
-<h1>Formulario de Contacto</h1>
-<br>
 
-<div class="row">
-    <div class="col-6">
-    <form #formContacto="ngForm" (ngSubmit)="onSubmit();formContacto.reset()">
-        <div class="form-row">
-            <div class="col">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nombre y Apellido</label>
-                    <input [ngClass]="{'input-missing' : nombrecompleto.touched && !nombrecompleto.valid}" type="text" class="form-control" name="nombrecompleto" #nombrecompleto="ngModel" [(ngModel)]="contactonuevo.nombrecompleto" required placeholder="Nombre y Apellido">
-                </div>
+    <div class="row container-fluid">
 
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input [ngClass]="{'input-missing' : email.touched && !email.valid}" type="email" class="form-control" name="email" #email="ngModel" [(ngModel)]="contactonuevo.email" required pattern="[a-z]+[a-z0-9._]+@[a-z]+\.[a-z]+" placeholder="Email">
-                </div>
+            <div class="col-md-12  col-xl-6 col-lg-6"> 
+                        
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="../../../assets/ies-ubicacion.PNG" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="../../../assets/upcn-ubicacion.PNG" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" col  ml-2 mr-4 mt-2 mb-2 animated fadeIn">
+                                <ul class="social-network social-circle">
+                                        <li><a target="_blank" href="https://www.facebook.com/iessantafe/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a target="_blank" href="https://twitter.com/iessantafe" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a target="_blank" href="https://www.instagram.com/iessantafe/?hl=es-la" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a target="_blank" href="https://www.youtube.com/channel/UCs35_YL-H0ICFobTxUL7cZQ" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a target="_blank" href="https://vimeo.com/user26372890" class="icoVimeo" title="Vimeo"><i class="fa fa-vimeo"></i></a></li>
+                                        <li><a target="_blank" href="https://www.linkedin.com/company/ies-santa-fe" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                      </ul>
+                        </div>
+                
+            </div>  
 
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefono de Contacto</label>
-                    <input [ngClass]="{'input-missing' : telefono.touched && !telefono.valid}" type="number" class="form-control" name="telefono" #telefono="ngModel" [(ngModel)]="contactonuevo.telefono" required placeholder="Telefono de Contacto">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Mensaje</label>
-                    <textarea [ngClass]="{'input-missing' : mensaje.touched && !mensaje.valid}" class="form-control" name="mensaje" #mensaje="ngModel" [(ngModel)]="contactonuevo.mensaje" placeholder="Deja tu mensaje" rows="3"></textarea>
-                </div>
 
-                <button type="submit" class="btn btn-danger w-100" [disabled]="!formContacto.form.valid">Enviar</button>
+
+
+        <div class="col-md-12  col-xl-6 col-lg-6">
+        <form #formContacto="ngForm" (ngSubmit)="onSubmit();formContacto.reset()">
+            <div class="form-row">
+                <div class="col">
+
+                    <div class="form-group input-group">
+                        <input [ngClass]="{'input-missing' : nombrecompleto.touched && !nombrecompleto.valid}" type="text" class="form-control" name="nombrecompleto" #nombrecompleto="ngModel" [(ngModel)]="contactonuevo.nombrecompleto" required placeholder="Nombre y Apellido">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                    <i class="fa fa-user"></i>                                        
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group input-group">
+                            <input [ngClass]="{'input-missing' : email.touched && !email.valid}" type="email" class="form-control" name="email" #email="ngModel" [(ngModel)]="contactonuevo.email" required pattern="[a-z]+[a-z0-9._]+@[a-z]+\.[a-z]+" placeholder="Email">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">
+                                        <i class="fa fa-at"></i>                                         
+                                </span>
+                            </div>
+                    </div>
+
+                    <div class="form-group input-group">
+                        <input [ngClass]="{'input-missing' : telefono.touched && !telefono.valid}" type="number" class="form-control" name="telefono" #telefono="ngModel" [(ngModel)]="contactonuevo.telefono" required placeholder="Telefono de Contacto">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">
+                                    <i class="fa fa-phone"></i>                                       
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group input-group">
+                        <textarea [ngClass]="{'input-missing' : mensaje.touched && !mensaje.valid}" class="form-control" name="mensaje" #mensaje="ngModel" [(ngModel)]="contactonuevo.mensaje" placeholder="Deja tu mensaje" rows="3"></textarea>
+                        <div class="input-group-append">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">
+                                        <i class="fa fa-pencil"></i>                                   
+                                </span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger w-100" [disabled]="!formContacto.form.valid">Enviar</button>
+                </div>
             </div>
-        </div>
-    </form>
-  </div>
+        </form>
+    </div>
+    
+
 </div>
+    
 
 
 <br>

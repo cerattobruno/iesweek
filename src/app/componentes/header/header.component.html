@@ -19,12 +19,10 @@
             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='galeria'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='galeria'>Galeria </a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='contacto'}">
+            <li class="nav-item top-menu-right" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='contacto'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='contacto'>Contacto</a>
             </li>
-            <li class="nav-item top-menu-right" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='redes'}">
-                <a class="nav-link" [routerLink]="['/']"  fragment='redes'>Redes Sociales </a>
-            </li>
+            
         </ul>
     </div>
 </nav>
