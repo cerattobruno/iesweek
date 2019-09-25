@@ -5,5 +5,9 @@ html {
 
 @font-face {
     font-family: barlow;
-    src: url(assets/fonts/barlow/Barlow-Regular.otf) format("opentype");
+    src: url("assets/fonts/barlow/Barlow-Regular.otf") format("opentype");}
+
+    @font-face {
+    font-family: barlow-bold;
+    src: url("assets/fonts/barlow/Barlow-Bold.otf") format("opentype");
   }

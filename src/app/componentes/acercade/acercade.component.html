@@ -1,31 +1,19 @@
-<div class="col">
-    <div class="row ml-3 mr-4 mt-3 animated fadeIn">
-        <label>IES WEEK es un evento anual que organiza el Instituto de Estudios
-          Superiores de Santa Fe “IES”, que nuclea todas las actividades expositivas,
-          educativas y recreativas que generan las carreras terciarias del IES.</label>
-        <h2 class="assistCounter">{{(item|async)?.value }}</h2>
-        
-        <button [disabled]="userAssisted" (click)="update()">Asistiré</button>
+<div class="row container-fluid mb-5">
+
+    <div class="col-md-12  col-xl-6 col-lg-6">
+
+        <p>Noviembre de 2019 es el mes elegido por el IES para estrenar un nuevo evento con temáticas variadas. A partir de este año, IES WEEK será un evento anual que organiza el Instituto de Estudios Superiores de Santa Fe “IES”, que nuclea todas las actividades expositivas, educativas y recreativas que generan las carreras terciarias del IES.</p>
+        <p><b>A desarrollarse del 4 al 8 de Noviembre de 2019, este año las sedes serán la Sala de UPCN (Rivadavia esq. Tucumán) y el mismo IES (Tucumán 2721, 2do. Piso).</b></p>
+        <div class="col contadorAsistentes">
+            <span class="assistCounter">{{(item|async)?.value }} <i class="assistCounterIcon fa fa-users"></i></span> 
+            <br/>
+            <button [disabled]="userAssisted" (click)="update()">Asistiré</button>
+        </div>
+
+    </div>
+    
+    <div class="col-md-12  col-xl-6 col-lg-6">
+
     </div>
 
-
-    <div class="row  ml-3 mr-4 mt-3 animated fadeIn">
-        <label>Dirección de evento global: Grupo de Coordinadores de carreras y Directivos del IES.<p>
-          Dirección de eventos específicos: Coordinador de cada carrera, según sus propios eventos.<p>
-          Trabajos de eventos específicos: Alumnos de cada carrera, personal UPCN y profesionales
-          convocados.<p>
-          La idea es involucrar a los alumnos en la generación de contenidos para cada evento específico
-          como parte de las prácticas profesionalizantes de cada una de las carreras. Además de la
-          participación activa de los mismos en los eventos propuestos.</label>
-    </div>
-
-    <div class="row  ml-3 mr-4 mt-3 animated fadeIn">
-        <label>El acceso es libre con entrada gratuita. Algunos eventos podrán tener un cupo limitado de
-          público y/o participantes.<p>
-          En las charlas y/o workshop donde se diagrame un auditorio o mesas de trabajo, la prioridad
-          de ubicaciones será para los alumnos cursantes de las carreras en cuestión, teniendo en
-          cuenta la temática de la actividad. Los lugares libres podrán ser ocupados por público en
-          general.</label>
-    </div>
-    <hr>
 </div>

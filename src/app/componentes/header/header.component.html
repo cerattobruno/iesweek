@@ -1,6 +1,6 @@
         
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark ">        
-    <a class="navbar-brand ml-3" [routerLink]="['/']" ><img class="header-logo" src="../../../assets/IESWeek2019.png" alt="IES Week Logo" title="IES Week Logo"></a>
+    <a class="navbar-brand ml-3" [routerLink]="['/']" fragment=''><img class="header-logo" src="../../../assets/IESWeek2019.png" alt="IES Week Logo" title="IES Week Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto rounded-more top-menu">
             <li class="nav-item top-menu-left" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='acercade'}">
-                <a class="nav-link" [routerLink]="['/']" fragment='acercade'>Acerca de </a>
+                <a class="nav-link" [routerLink]="['/']" fragment=''>Acerca de </a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='cronograma'}">
                 <a class="nav-link" [routerLink]="['/']" fragment='cronograma'>Cronograma</a>
