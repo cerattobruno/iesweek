@@ -3,7 +3,7 @@
         <label>IES WEEK es un evento anual que organiza el Instituto de Estudios
           Superiores de Santa Fe “IES”, que nuclea todas las actividades expositivas,
           educativas y recreativas que generan las carreras terciarias del IES.</label>
-        <div counto [step]="10" [countTo]="(item|async)?.value" [countFrom]="1" [duration]="3" (countoChange)="intermediate = $event">{{intermediate | number:'1.0-0'}}</div>
+        <h2 class="assistCounter">{{(item|async)?.value }}</h2>
         
         <button [disabled]="userAssisted" (click)="update()">Asistiré</button>
     </div>
