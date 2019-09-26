@@ -1,0 +1,6 @@
+.borde {
+    border-radius: 2rem !important;
+    max-height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}

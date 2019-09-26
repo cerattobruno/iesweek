@@ -12,7 +12,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { RedesComponent } from './componentes/redes/redes.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { CountoModule }  from 'angular2-counto';
+import { CountoModule } from 'angular2-counto';
 
 // Conexión a Firebase
 import { AngularFireModule } from 'angularfire2';
