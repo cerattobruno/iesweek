@@ -1,13 +1,15 @@
-<div class="row container m-auto ">
+<div class="container m-auto ">
     <div id="carouselExampleControls" class="m-auto borde carousel-fade carousel slide animated fadeIn faster" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li *ngFor="let foto of galeria; let i=index" data-target="#carouselExampleIndicators" data-slide-to="i" class="active"></li>
+            <li *ngFor="let foto of galeria; let i=index" data-target="#carouselExampleControls" data-slide-to="i" [ngClass]="{'active' : i==0}"></li>
         </ol>
         <div class="carousel-inner">
             <div *ngFor="let foto of galeria; let i=index" class="carousel-item" [ngClass]="{'active' : i==0}">
                 <img class="d-block w-100" src="{{foto.url}}" alt="{{foto.titulo}}">
+                <div class="carousel-caption">
+                    <p>{{foto.carrera}}</p>
+                </div>
             </div>
-
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="false"></span>
@@ -19,4 +21,5 @@
         </a>
     </div>
 </div>
+
 <hr>
