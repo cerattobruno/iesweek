@@ -11,3 +11,8 @@ html {
     font-family: barlow-bold;
     src: url("assets/fonts/barlow/Barlow-Bold.otf") format("opentype");
   }
+
+  @font-face {
+    font-family: barlow-bolditalic;
+    src: url("assets/fonts/barlow/Barlow-BoldItalic.otf") format("opentype");
+  }
