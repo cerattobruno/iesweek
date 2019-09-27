@@ -17,9 +17,9 @@ export class DisertantesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.disertante1 = new Disertante('Lionel', 'Messi', '../../../assets/disertante2.jpg');
-    this.disertante2 = new Disertante('Luis', 'Suarez', '../../../assets/disertante2.jpg');
-    this.disertante3 = new Disertante('Neymar', 'Junior', '../../../assets/disertante2.jpg');
+    this.disertante1 = new Disertante('Lionel', 'Messi', '../../../assets/disertante2.jpg', 'Diseñador');
+    this.disertante2 = new Disertante('Luis', 'Suarez', '../../../assets/disertante2.jpg', 'Desarrollador');
+    this.disertante3 = new Disertante('Neymar', 'Junior', '../../../assets/disertante2.jpg', 'Periodista');
 
     this.disertantes = [this.disertante1, this.disertante2, this.disertante3];
   }

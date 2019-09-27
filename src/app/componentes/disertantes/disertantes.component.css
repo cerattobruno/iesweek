@@ -1,0 +1,54 @@
+.rounded {
+    border-radius:.70rem!important;
+}
+
+.rounded-left {
+    border-radius:.70rem!important;
+}
+
+.rounded-right {
+    border-radius:.70rem!important;
+}
+
+.input-group-text{
+	background: none!important;
+	border: none!important;
+	margin-left: -35px!important;
+	z-index: 100;
+}
+
+.card-img-top{
+	border: none!important;
+	margin:  auto;
+    overflow: hidden;
+}
+
+
+h1 {
+	font-family: 'barlow-bolditalic',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+}
+
+.card-title, .card-text{
+	line-height: 20px; 
+	margin-bottom: 0;
+	margin-left: 10px!important;
+}
+
+.btn{
+	background-color: #ba122b!important;
+}
+
+.card{
+    background-color: #ba122b!important;
+    border: none!important!
+}
+
+.list-group, .list-group-flush, .list-group-item{
+    background-color: #ba122b!important;
+	color: white!important;
+	border: none;
+}
+
+.fa{
+	margin-left: 15px!important;
+}
