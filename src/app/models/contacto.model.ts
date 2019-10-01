@@ -4,6 +4,6 @@ export class Contacto {
         public telefono: string,
         public email: string,
         public mensaje: string,
-
+        public carrera: string
     ) {}
 }

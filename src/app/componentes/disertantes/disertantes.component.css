@@ -24,31 +24,25 @@
 }
 
 
-h1 {
-	font-family: 'barlow-bolditalic',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+h3 {
+	font-family: 'barlow-bolditalic',sans-serif; 
+	font-size: 40px; 
+	font-weight: 800; 
+	line-height: 52px; 
+	text-transform: uppercase;
+	color: #ba122b;
 }
 
 .card-title, .card-text{
-	line-height: 20px; 
-	margin-bottom: 0;
-	margin-left: 10px!important;
+	line-height: 20px;
+	color: #ba122b;
 }
-
-.btn{
-	background-color: #ba122b!important;
-}
-
-.card{
-    background-color: #ba122b!important;
-    border: none!important!
+.card-title {
+	font-family: 'barlow-bold',sans-serif;
 }
 
 .list-group, .list-group-flush, .list-group-item{
-    background-color: #ba122b!important;
-	color: white!important;
+    background-color: #ba122b;
+	color: white;
 	border: none;
-}
-
-.fa{
-	margin-left: 15px!important;
 }

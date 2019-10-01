@@ -22,12 +22,12 @@ export class ContactoComponent implements OnInit {
     this.itemname = 'contactos/contacto_' + currentUnixTime;
     this.itemRef = db.object(this.itemname);
     this.item = this.itemRef.valueChanges();
-    this.contactonuevo = new Contacto('', '', '', '');
+    this.contactonuevo = new Contacto('', '', '', '', '');
     this.envie = false;
   }
   save() {
     this.itemRef.set({ nombre: this.contactonuevo.nombrecompleto, email: this.contactonuevo.email,
-      telefono: this.contactonuevo.telefono, mensaje: this.contactonuevo.mensaje });
+      telefono: this.contactonuevo.telefono, mensaje: this.contactonuevo.mensaje, carrera: this.contactonuevo.carrera });
   }
   delete() {
     this.itemRef.remove();
@@ -38,7 +38,7 @@ export class ContactoComponent implements OnInit {
 
   onSubmit() {
     this.save();
-    this.contactonuevo = new Contacto('', '', '', '');
+    this.contactonuevo = new Contacto('', '', '', '', '');
     this.bandera = true;
     this.envie = true;
   }

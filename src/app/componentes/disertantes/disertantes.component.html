@@ -1,25 +1,16 @@
-<div class="ml-2">
-    <h3>Disertantes</h3>
-</div>
-
-<div class="card-columns">
-
-    <div *ngFor="let disertante of disertantes" class="card text-white bg-primary ml-2 mr-4 mt-2 mb-2 animated fadeIn rounded">
-        <img class="card-img-top rounded" src="{{ disertante.url }}" alt="Card image cap">
-        <div class="card-body rounded">
-            <h5 class="card-title text-center">{{disertante.nombre}} {{disertante.apellido}} </h5>
-            <p class="card-text text-center"> <small>{{disertante.carrera}} </small></p>
+<div class="container ml-auto mr-auto mt-5 mb-5">
+    <h3 class="mt-5 mb-3">DISERTANTES</h3>
+    <div class="card-columns">
+        <div *ngFor="let disertante of disertantes" class="card text-white animated fadeIn rounded">
+            <img class="card-img-top rounded" src="{{ disertante.url }}">
+            <div class="card-body rounded">
+                <h5 class="card-title">{{disertante.nombre}} {{disertante.apellido}}</h5>
+                <p class="card-text">{{disertante.descripcion}}</p>
+            </div>
+            <ul class="list-group list-group-flush rounded">
+                <li class="list-group-item list-group-item-action rounded">{{disertante.fecha}} - {{disertante.lugar}}</li>
+            </ul>
         </div>
-        <ul class="list-group list-group-flush rounded">
-            <li class="list-group-item list-group-item-action list-group-item-primary rounded text-center">
-                <i class="fa fa-facebook-f"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-globe"></i>
-            </li>
-            
-        </ul>
     </div>
-
 </div>
 <hr>
