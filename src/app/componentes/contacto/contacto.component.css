@@ -105,7 +105,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .card-img{
-	margin: 15px!important;
+	margin: 15px;
 	border:1px solid #021a40!important;
 }
 
@@ -168,4 +168,35 @@ input {
     overflow: visible;
 	padding-top:100px;
 	min-height: 650px;
+}
+
+
+@media (max-width: 992px) {
+	.contacto-div {
+		background-position-x: center;
+		background-position-y: bottom;
+		padding-top:0px;
+	}
+	.align-content-center {
+		text-align:center;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+	}
+	.contacto-width {
+		max-width: 540px;
+		margin: 0 auto;
+	}
+	ul.social-network li {
+		display: inline-block !important;
+		margin: 0 15px 10px 15px !important;
+	}
+	.card-img{
+		margin: 5px auto !important;
+		max-width: 96%;
+		display: block;
+	}
 }

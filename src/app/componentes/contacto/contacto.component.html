@@ -1,5 +1,5 @@
-<div class="row container mt-5 mb-5 ml-auto mr-auto contacto-div">
-    <div class="col-md-12  col-xl-6 col-lg-6">
+<div class="row container sm-container-fluid mt-5 mb-5 ml-auto mr-auto contacto-div">
+    <div class="contacto-width col-md-12  col-xl-6 col-lg-6">
         <div class="card text-white bg-danger mb-3 rounded">
             <div class="row no-gutters">
                 <div class="col-md-5">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div class=" col-lg-12 align-content-center mt-5 mb-2 animated fadeIn">
+        <div class="col-lg-12 align-content-center mt-5 mb-2 animated fadeIn">
             <ul class="social-network social-circle">
                 <li><a target="_blank" href="https://www.facebook.com/iessantafe/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                 <li><a target="_blank" href="https://twitter.com/iessantafe" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -40,8 +40,8 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-12  col-xl-6 col-lg-6 fondo-contacto">
-        <form class="ml-5" #formContacto="ngForm" (ngSubmit)="onSubmit();formContacto.reset()">
+    <div class="contacto-width col-md-12  col-xl-6 col-lg-6">
+        <form class="ml-md-0 mt-md-5 ml-sm-0 mt-sm-5" #formContacto="ngForm" (ngSubmit)="onSubmit();formContacto.reset()">
             <div class="form-row">
                 <div class="col">
                     <div class="form-group input-group">
@@ -107,9 +107,6 @@
                             </button>
                         </div>
                     </div>
-
-                    <br>
-                    <br>
                     <div class="text-center">
                         <h1 class="hashtag">#IESWEEK2019</h1>
                     </div>
