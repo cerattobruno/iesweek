@@ -127,12 +127,7 @@
 .content ul {
     margin-bottom: 0;
 }
-.lunes4 {
-    background-image: url('../../../assets/numero4.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
